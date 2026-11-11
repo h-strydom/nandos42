@@ -1,0 +1,29 @@
+{
+  "name": "nandos42",
+  "version": "0.1.0",
+  "description": "Unofficial MCP server for ordering Nando's South Africa for collection. Tell your agent 'Nando's, surprise me'.",
+  "type": "module",
+  "bin": {
+    "nandos42": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js serve"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.9.0"
+  }
+}
